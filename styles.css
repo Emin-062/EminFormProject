@@ -26,12 +26,12 @@ main  {
 }
 
 .logo {
-    margin-top: 3rem;
+    margin-top: 2.5rem;
     margin-left: 2rem;
 }
 
 .ctr {
-    padding-inline: 11%;
+    padding-inline: 15%;
 }
 
 .form-section {
@@ -46,7 +46,7 @@ form {
     justify-content: center;
     gap: 2rem;
     width: 90%;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .form-wrapper {
@@ -58,13 +58,12 @@ form {
 .inputs {
     display: flex;
     flex-direction: column;
-
-    gap: 3rem;
+    gap: 1.8rem;
     color: var(--gray);
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 2.5rem;
     color: #000;
 }
 
@@ -168,7 +167,7 @@ input {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 4rem;
     width: 50%;
     background-color: var(--green);
     padding: 3rem;
@@ -231,13 +230,16 @@ input {
   }
   
   .illustrate img {
+    position: absolute;
+    right: 0;
+    bottom: -15%;
     max-width: 240px;
   }
   
   .earnings {
     position: absolute;
-    bottom: -25px;
-    right: 25px;
+    bottom: -15%;
+    right: 0;
     display: flex;
     align-items: center;
     gap: 0.75rem;
@@ -245,7 +247,10 @@ input {
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     padding: 1rem 1.25rem;
-    width: 50%;
+  }
+
+  .chart-icon {
+    background: transparent;
   }
   
   .earnings h4 {
@@ -266,20 +271,51 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
+    padding-inline: 4rem;
+    margin-top: 10px;
   }
 
-  @media (max-width:900px) {
+  @media (max-width:1300px) {
+    .illustrate img {
+        width: 180px;
+        bottom: -10%;
+    }
+
+    .earnings {
+        padding: 0.5rem;
+        bottom: -10%;
+    }
+
+    .info-and-support {
+      padding: 1.5rem;
+    }
+    
+  }
+
+    @media (max-width:1100px) {
+    .illustrate img {
+        width: 150px;
+        bottom: -10%;
+    }
+
+    .earnings {
+        padding: 0.5rem;
+        bottom: -10%;
+    }
+
+    .info-and-support {
+      padding: 1.5rem;
+    }    
+  }
+
+  @media (max-width:978px) {
     main {
         flex-direction: column;
     }
     .form-section,
     .info-and-support {
         width: 100%;
-    }
-    
-    .illustrate img {
-        max-width: 220px;
     }
   }
 
@@ -288,3 +324,62 @@ input {
         width: 180px;
       }
   }
+
+  @media (max-width:635px) {
+      .info-and-support {
+        padding: 0;
+      }
+  }
+
+  @media (max-width:440px) {
+      .illustrate img {
+        width: 130px;
+        bottom: -5%;
+      }
+
+      .earnings {
+        padding: 0.3rem;
+        bottom: -10%;
+      }
+
+      .earnings h4 {
+        font-size: 12px;
+      }
+
+      .earnings p {
+        font-size: 14px;
+      }
+
+      .learn-more p {
+        font-size: 12px;
+      }
+
+      .learn-more h2 {
+        font-size: 18px;
+      }
+
+      .learn-more button {
+        padding: 0.5rem 1rem;
+        font-size: 12px;
+      }
+
+      .features p {
+        font-size: 12px;
+      }
+
+      .new-features-txt h2{
+        font-size: 20px;
+      }
+
+      .new-features-txt p {
+        font-size: 14px;
+      }
+
+      .new-features-txt {
+        padding-inline: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+  }
+
